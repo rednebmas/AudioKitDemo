@@ -12,6 +12,9 @@
 		225BA593221A8008001512C6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 225BA591221A8008001512C6 /* Main.storyboard */; };
 		225BA595221A800A001512C6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 225BA594221A800A001512C6 /* Assets.xcassets */; };
 		225BA598221A800A001512C6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 225BA596221A800A001512C6 /* LaunchScreen.storyboard */; };
+		225BA5A0221A807E001512C6 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = 225BA59F221A807E001512C6 /* Sound.swift */; };
+		225BA5A2221A81FC001512C6 /* tick.wav in Resources */ = {isa = PBXBuildFile; fileRef = 225BA5A1221A81FC001512C6 /* tick.wav */; };
+		E9B68F594947B36329CD8DC1 /* Pods_AudioKitTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 375833D8F0BAE7A5EB45DBAA /* Pods_AudioKitTest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +25,11 @@
 		225BA594221A800A001512C6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		225BA597221A800A001512C6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		225BA599221A800A001512C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		225BA59F221A807E001512C6 /* Sound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
+		225BA5A1221A81FC001512C6 /* tick.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = tick.wav; sourceTree = "<group>"; };
+		375833D8F0BAE7A5EB45DBAA /* Pods_AudioKitTest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AudioKitTest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		59B8357E436F344EC071B294 /* Pods-AudioKitTest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioKitTest.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AudioKitTest/Pods-AudioKitTest.debug.xcconfig"; sourceTree = "<group>"; };
+		5DCBE5FB154259E8508A19DF /* Pods-AudioKitTest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AudioKitTest.release.xcconfig"; path = "Pods/Target Support Files/Pods-AudioKitTest/Pods-AudioKitTest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E9B68F594947B36329CD8DC1 /* Pods_AudioKitTest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +49,8 @@
 			children = (
 				225BA58C221A8008001512C6 /* AudioKitTest */,
 				225BA58B221A8008001512C6 /* Products */,
+				3100C141385D9FC3641187D5 /* Pods */,
+				31A1CD5E0066708CD31D57AA /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -57,11 +68,30 @@
 				225BA58D221A8008001512C6 /* AppDelegate.swift */,
 				225BA58F221A8008001512C6 /* ViewController.swift */,
 				225BA591221A8008001512C6 /* Main.storyboard */,
+				225BA5A1221A81FC001512C6 /* tick.wav */,
+				225BA59F221A807E001512C6 /* Sound.swift */,
 				225BA594221A800A001512C6 /* Assets.xcassets */,
 				225BA596221A800A001512C6 /* LaunchScreen.storyboard */,
 				225BA599221A800A001512C6 /* Info.plist */,
 			);
 			path = AudioKitTest;
+			sourceTree = "<group>";
+		};
+		3100C141385D9FC3641187D5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				59B8357E436F344EC071B294 /* Pods-AudioKitTest.debug.xcconfig */,
+				5DCBE5FB154259E8508A19DF /* Pods-AudioKitTest.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		31A1CD5E0066708CD31D57AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				375833D8F0BAE7A5EB45DBAA /* Pods_AudioKitTest.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,6 +101,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 225BA59C221A800A001512C6 /* Build configuration list for PBXNativeTarget "AudioKitTest" */;
 			buildPhases = (
+				3739517FC19D6C24C9379184 /* [CP] Check Pods Manifest.lock */,
 				225BA586221A8008001512C6 /* Sources */,
 				225BA587221A8008001512C6 /* Frameworks */,
 				225BA588221A8008001512C6 /* Resources */,
@@ -125,10 +156,32 @@
 				225BA598221A800A001512C6 /* LaunchScreen.storyboard in Resources */,
 				225BA595221A800A001512C6 /* Assets.xcassets in Resources */,
 				225BA593221A8008001512C6 /* Main.storyboard in Resources */,
+				225BA5A2221A81FC001512C6 /* tick.wav in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		3739517FC19D6C24C9379184 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AudioKitTest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		225BA586221A8008001512C6 /* Sources */ = {
@@ -136,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				225BA590221A8008001512C6 /* ViewController.swift in Sources */,
+				225BA5A0221A807E001512C6 /* Sound.swift in Sources */,
 				225BA58E221A8008001512C6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,6 +334,7 @@
 		};
 		225BA59D221A800A001512C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 59B8357E436F344EC071B294 /* Pods-AudioKitTest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -298,6 +353,7 @@
 		};
 		225BA59E221A800A001512C6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5DCBE5FB154259E8508A19DF /* Pods-AudioKitTest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

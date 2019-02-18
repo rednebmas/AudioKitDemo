@@ -7,14 +7,25 @@
 //
 
 import UIKit
+import AudioKit
 
 class ViewController: UIViewController {
+    
+    public let tickSound = MySound(url: "tick.wav")
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        AKSettings.playbackWhileMuted = true
     }
 
-
+    @IBAction func stopAudioKit(_ sender: Any) {
+        try! AudioKit.stop()
+        print("AudioKit stopped")
+    }
+    
+    @IBAction func playSound(_ sender: Any) {
+        tickSound.play()
+    }
+    
 }
 
